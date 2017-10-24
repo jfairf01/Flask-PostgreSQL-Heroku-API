@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os
 import subprocess
-from config import Config
+from config import Config, config
 
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager, Shell
@@ -12,7 +12,7 @@ from app import create_app, db
 from app.models import *
 
 
-app = create_app('development')
+app = create_app(os.environ.get('FLASK_CONFIG'))
 manager = Manager(app)
 migrate = Migrate(app, db)
 
