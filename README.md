@@ -16,6 +16,15 @@ To install the dependencies, run the following command;
 $ ./installDependencies.sh
 ```
 
+Now that the dependences are install, you have to install the local dependencies in your virtual environment.
+
+To do this, in your terminal type the following;
+
+```
+$ source env/bin/activate
+$ pip install -r requirements.txt
+```
+
 ##### Initialize your local PostgreSQL database
 
 Open a new terminal window and run this command;
