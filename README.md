@@ -16,7 +16,7 @@ To install the dependencies, run the following command;
 $ ./installDependencies.sh
 ```
 
-Now that the dependences are install, you have to install the local dependencies in your virtual environment.
+Now that the dependences are installed, you have to install the local dependencies in your virtual environment.
 
 To do this, in your terminal type the following;
 
@@ -33,6 +33,7 @@ Open a new terminal window and run this command;
 $ ./initializeLocalDB.sh
 ```
 
+Make sure that after you run this command, to open up the file. I have commented out commands that can't run directly from a bash script, but you need to run them to create your local database 'mobile_dev_api' or else when you try to setupdb.sh it will complain that there is no database to create tables in
 
 ##### Initialize your database with fake data
 
